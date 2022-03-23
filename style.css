@@ -18,6 +18,16 @@
     border-top: 0;
     border-bottom: 0;
     background: linear-gradient(to right,red, orange);
+    animation: rotateInY 25s ease infinite;
+}
+
+@keyframes rotateInY {
+    0%,100%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
 }
 
 #circle-top{
@@ -29,6 +39,7 @@
     background: red;
     background: linear-gradient(to left,red, orange);
 }
+
 #circle-bottom{
     position: absolute;
     width: 150px;

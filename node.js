@@ -1,4 +1,4 @@
-document.getElementById('beforeMainFrame').addEventListener('click',()=>{
+document.getElementById('mainFrame').addEventListener('click',()=>{
     html2canvas(document.getElementById("beforeMainFrame")).then(canvas => {
         document.getElementById('link').setAttribute('href',`${canvas.toDataURL('image/png')}`);
     });
