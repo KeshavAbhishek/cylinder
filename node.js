@@ -3,5 +3,5 @@ document.getElementById('mainFrame').addEventListener('click',()=>{
         document.getElementById('link').setAttribute('href',`${canvas.toDataURL('image/png')}`);
     });
 
-    console.log(document.getElementById('link').click());
+    document.getElementById('link').click();
 })
