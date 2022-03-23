@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainFrame{
+    position: relative;
+    height: 300px;
+    width: 150px;
+    border-top: 0;
+    border-bottom: 0;
+    background: linear-gradient(to right,red, orange);
+}
+
+#circle-top{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    border-radius: 50%;
+    top: -25px;
+    background: red;
+    background: linear-gradient(to left,red, orange);
+}
+#circle-bottom{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: -25px;
+    background: red;
+    background: linear-gradient(to left,red, orange);
+}
+
+#mainFrame:hover{
+    background: linear-gradient(to right, orange, red);
+}
+#mainFrame:hover #circle-top{
+    background: linear-gradient(to left, orange, red);
+}
+#mainFrame:hover #circle-bottom{
+    background: linear-gradient(to left, orange, red);
+}
