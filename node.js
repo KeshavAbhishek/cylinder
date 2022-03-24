@@ -1,5 +1,5 @@
 document.getElementById('mainFrame').addEventListener('click',()=>{
-    html2canvas(document.getElementById("beforeMainFrame")).then(canvas => {
+    html2canvas(document.getElementById("container"),{dpi:300}).then(canvas => {
         document.getElementById('link').setAttribute('href',`${canvas.toDataURL('image/png')}`);
     });
 

@@ -26,8 +26,11 @@
     height: 50px;
     border-radius: 50%;
     top: -25px;
-    background: red;
-    background: linear-gradient(to left,red, orange);
+    /* background: linear-gradient(to left,red, orange); */
+    background: linear-gradient(to left,rgb(192, 1, 192),rgb(71, 58, 247));
+    border-bottom-style: dashed;
+    border-bottom-width: 2px;
+    border-color: white;
 }
 
 #circle-bottom{
@@ -36,8 +39,11 @@
     height: 50px;
     border-radius: 50%;
     bottom: -25px;
-    background: red;
-    background: linear-gradient(to left,red, orange);
+    /* background: linear-gradient(to left,red, orange); */
+    background: linear-gradient(to left,rgb(192, 1, 192),rgb(71, 58, 247));
+    border-top-style: dashed;
+    border-top-width: 2px;
+    border-color: white;
 }
 
 #mainFrame:hover{
